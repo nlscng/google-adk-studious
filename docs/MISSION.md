@@ -1,5 +1,10 @@
 # Mission
 
+> **Role in the doc hierarchy:** this is the top-level *why* document. It
+> drives [`SPEC.md`](SPEC.md) (the *what*), which in turn drives
+> [`DESIGN.md`](DESIGN.md) (the *how*). If something changes here, the
+> downstream docs need to be reconciled.
+
 ## Why
 
 We want a small but believable robotics scenario to explore the Google

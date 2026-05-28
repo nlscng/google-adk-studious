@@ -20,15 +20,24 @@ introduced once the seams are obvious.
 
 ## How we work
 
-This project follows the spirit of **spec-driven development**:
+This project follows the spirit of **spec-driven development**, with a
+small three-doc hierarchy living in `docs/`:
 
-- Write the spec (the "what" and "why") before the code.
-- Keep specs in `docs/` alongside the code they describe.
-- Treat specs as living documents: update them as understanding evolves,
-  and let code changes follow from spec changes rather than the other way
-  around.
-- Use PRs for all changes (including spec changes) so the reasoning is
-  reviewable.
+1. [`docs/MISSION.md`](docs/MISSION.md) — **why**. The motivation and
+   the scenario. Drives everything else.
+2. [`docs/SPEC.md`](docs/SPEC.md) — **what**. Features, components,
+   required behaviors. Derived from the mission.
+3. [`docs/DESIGN.md`](docs/DESIGN.md) — **how**. Architecture, module
+   boundaries, decisions, tradeoffs. Must satisfy the spec.
+
+Rules of thumb:
+
+- Write/update the doc *before* (or alongside) the code that implements
+  it.
+- A change at a higher level may require updates at lower levels;
+  keep them reconciled.
+- All changes — including doc changes — go through PRs so the reasoning
+  is reviewable.
 
 Start with [`docs/MISSION.md`](docs/MISSION.md) for the high-level "why".
 
